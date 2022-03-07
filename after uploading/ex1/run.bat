@@ -1,2 +1,0 @@
-java WordGuessingGame
-pause
