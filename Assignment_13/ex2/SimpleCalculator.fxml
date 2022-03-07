@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SimpleCalculatorController">
+   <center>
+      <GridPane alignment="CENTER" hgap="5.0" vgap="5.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="signButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signButtonPressed" text="+/-" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding></Button>
+            <Button fx:id="dotButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#dotButtonPressed" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding></Button>
+            <ToggleButton fx:id="zeroToggleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="digitToggleGroup" />
+               </toggleGroup>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="oneToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="1" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="twoToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="2" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="threeToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="3" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="fourToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="4" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="fiveToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="5" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="sixToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="6" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="sevenToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="7" textAlignment="CENTER" toggleGroup="$digitToggleGroup">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="eightToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="8" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="nineToggleButton" contentDisplay="CENTER" layoutX="158.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#digitToggleButtonPressed" text="9" textAlignment="CENTER" toggleGroup="$digitToggleGroup" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="addToggleButton" contentDisplay="CENTER" layoutX="305.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#operatorToggleButtonPressed" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="operatorToggleGroup" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="subtractToggleButton" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#operatorToggleButtonPressed" text="-" textAlignment="CENTER" toggleGroup="$operatorToggleGroup" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="multiplyToggleButton" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#operatorToggleButtonPressed" text="x" textAlignment="CENTER" toggleGroup="$operatorToggleGroup" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="divideToggleButton" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#operatorToggleButtonPressed" text="/" textAlignment="CENTER" toggleGroup="$operatorToggleGroup" GridPane.columnIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <ToggleButton fx:id="equalsToggleButton" contentDisplay="CENTER" layoutX="452.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#operatorToggleButtonPressed" text="=" textAlignment="CENTER" toggleGroup="$operatorToggleGroup" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </ToggleButton>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="305.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#memoryButtonPressed" text="MEM" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clearButtonPressed" text="CLR" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <top>
+      <TextField fx:id="screenTextField" alignment="CENTER_RIGHT" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="36.0" />
+         </font></TextField>
+   </top>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</BorderPane>
