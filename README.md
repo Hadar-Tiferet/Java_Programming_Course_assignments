@@ -1,2 +1,3 @@
-# CS_University_Courses
-Projects and assignments made as part of my computer science university courses
+# Java programming course assignments
+assignments made as a part of my java programming university course.
+Note: the assignments were made locally first and uploaded after the fact.
