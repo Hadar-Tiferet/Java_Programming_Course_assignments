@@ -1,0 +1,2 @@
+java GameOfLife
+pause
