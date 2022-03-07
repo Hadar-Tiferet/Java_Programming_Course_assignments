@@ -1,0 +1,2 @@
+java StudentAssociationTableTest
+pause

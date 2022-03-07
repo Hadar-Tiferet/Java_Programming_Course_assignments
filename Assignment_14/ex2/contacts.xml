@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<treeMapXML>
+    <treeMap>
+        <entry>
+            <key>Bob Lewis</key>
+            <value>
+                <notes>plumber</notes>
+                <phoneNumber>147963654</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>David Goldfinger</key>
+            <value>
+                <notes>manager at work</notes>
+                <phoneNumber>0500011954</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>John Davis</key>
+            <value>
+                <notes>friend from work</notes>
+                <phoneNumber>079642876</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>John Smith</key>
+            <value>
+                <notes>birth day: 17.02.1964</notes>
+                <phoneNumber>123456789</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>Karen Price</key>
+            <value>
+                <notes></notes>
+                <phoneNumber>987654321</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>Natalie Decker</key>
+            <value>
+                <notes></notes>
+                <phoneNumber>+9 58765432</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>Sales department</key>
+            <value>
+                <notes></notes>
+                <phoneNumber>*251</phoneNumber>
+            </value>
+        </entry>
+        <entry>
+            <key>Sue Jones</key>
+            <value>
+                <notes>birthday on 31.12</notes>
+                <phoneNumber>333333333</phoneNumber>
+            </value>
+        </entry>
+    </treeMap>
+</treeMapXML>
